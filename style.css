@@ -264,6 +264,26 @@ main {
     align-items: center;
     margin-top: 20px;
 }
+.view {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    visibility: hidden;
+}
+
+.view-btn {
+    background-color: red;
+    width: 252px;
+    height: 64px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 50px;
+
+
+
+}
 
 /*-------------- upcoming match end-------- */
 
@@ -326,7 +346,7 @@ hr {
 
     main,
     header {
-        width: 90%;
+        width: 80%;
     }
 
     .header {
@@ -392,27 +412,75 @@ hr {
 
 }
 
-  @media screen and (min-width:480px) and (max-width:768px) {
-    main {
-        width: 100%;
+@media screen and (min-width:480px) and (max-width:768px) {
+
+    main,
+    header {
+        width: 90%;
     }
+
+    .header-text {
+        width: 60%;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .header-text p {
+        font-size: 1rem;
+    }
+
+
+
+    .header-img {
+        width: 50%;
+    }
+
+    .header-img img {
+        width: 100%;
+
+    }
+
     .match-section {
         flex-direction: column;
+
     }
+
     .match-catagories {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         background: none;
+        width: 60%;
+        margin: 0 auto;
     }
+
     .match-catagories-btn {
-        border: 1px solid;
+        border: 1px solid #dfe0e0;
+
     }
+
     .match-details {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .dispaly {
+        display: none;
+    }
+
     .view {
         visibility: visible;
+        width: 60%;
+        margin: 0 auto;
+        font-size: 2rem;
+        text-align: center;
+
     }
-}  
+
+    .footer {
+        width: 70%;
+        flex-wrap: wrap;
+    }
+}
